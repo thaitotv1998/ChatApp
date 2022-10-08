@@ -17,7 +17,7 @@ class ChatApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: appTheme.light,
       darkTheme: appTheme.dark,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       home: HomeScreen(),
     );
   }

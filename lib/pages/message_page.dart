@@ -1,5 +1,4 @@
 import 'package:chatapp/screens/chat_screen.dart';
-import 'package:chatapp/screens/home_screen.dart';
 import 'package:chatapp/theme.dart';
 import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +15,7 @@ class MessagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(
+        const SliverToBoxAdapter(
           child: _OnlinePerson(),
         ),
         SliverList(
@@ -89,23 +88,23 @@ class _MessageTitle extends StatelessWidget {
               children: [
                 Text(
                   messageData.date,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
                     color: AppColors.textFaded,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Container(
                   height: 18,
                   width: 18,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: AppColors.secondary,
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       '1',
                       style: TextStyle(

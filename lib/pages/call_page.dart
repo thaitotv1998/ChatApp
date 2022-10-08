@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CallPage extends StatefulWidget {
-  CallPage({Key? key}) : super(key: key);
+  const CallPage({Key? key}) : super(key: key);
 
   @override
   State<CallPage> createState() => _CallPageState();

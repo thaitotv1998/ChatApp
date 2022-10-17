@@ -42,18 +42,18 @@ class IconBorder extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          // borderRadius: BorderRadius.circular(6),
           shape: BoxShape.circle,
           border: Border.all(
-            width: 2,
-            color: Theme.of(context).cardColor,
+            width: 1,
+            color: Colors.grey,
           ),
         ),
         child: Padding(
           padding: const EdgeInsets.all(6),
           child: Icon(
             icon,
-            size: 20,
+            size: 22,
+            color: Colors.grey[400],
           ),
         ),
       ),
